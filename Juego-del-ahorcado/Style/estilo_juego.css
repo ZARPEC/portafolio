@@ -1,0 +1,65 @@
+#juego {
+    visibility: hidden;
+}
+
+#dibujo {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#letras {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+#botones {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#boton {
+    color: white;
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+    background-color: #0A3871;
+    border-radius: 24px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+#boton:hover {
+    transform: translateY(-5px);
+}
+
+#boton:active {
+    transform: translateY(-1px)
+}
+
+button:last-of-type {
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    background-color: white;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+    /* Inside auto layout */
+}
+
+button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}

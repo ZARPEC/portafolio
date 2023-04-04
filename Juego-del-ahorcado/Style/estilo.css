@@ -1,0 +1,371 @@
+/* estilo para la pantalla principal*/
+
+.logo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logo:hover {
+    background-color: white;
+    color: #fff;
+    transform: translateY(0px);
+}
+
+#logoA {
+    flex: none;
+    height: 100px;
+    width: 120px;
+    order: 0;
+    flex-grow: 0;
+}
+
+.botonesIni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.inic {
+    padding: 24px;
+    background: #0a3871;
+    border-radius: 24px;
+    color: white;
+    width: 269px;
+    height: 66px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.inic:hover {
+    transform: translateY(-5px);
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+}
+
+.inic:active {
+    transform: translateY(-1px);
+}
+
+.agg {
+    padding: 24px;
+    width: 280px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    /*text*/
+    font-family: inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0A3871;
+    transition: all 0.3s ease 0s;
+}
+
+.agg:hover {
+    transform: translateY(-5px);
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+}
+
+.agg:active {
+    transform: translateY(-1px);
+}
+
+
+/* control de visibilidad */
+
+.juego {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.juego canvas {
+    width: 0px;
+    height: 0px;
+}
+
+.juego.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease 0s;
+}
+
+.juego.active canvas {
+    width: 600px;
+    height: 475px;
+}
+
+.botonesIni.active {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+#addWord {
+    visibility: hidden;
+    transition: all 0.001s ease 0s;
+    display: flex;
+}
+
+#active {
+    visibility: visible;
+    transition: all 0.001s ease 0s;
+}
+
+
+/* estilo de juego*/
+
+#dibujo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#letras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+}
+
+#botones {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#nuevoJue {
+    color: white;
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+    background-color: #0A3871;
+    border-radius: 24px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+#nuevoJue:hover {
+    transform: translateY(-5px);
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#nuevoJue:active {
+    transform: translateY(-1px)
+}
+
+#rend {
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    background-color: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+#rend:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+table {
+    font-size: 50px;
+    width: 500px;
+    height: 100px;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+td {
+    border-bottom: solid black 3px;
+    width: 500px;
+}
+
+#errores {
+    position: absolute;
+    left: 70%;
+    table-layout: fixed;
+    bottom: 300px;
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    z-index: 100;
+    align-self: center;
+    text-align: center;
+    padding: 0px;
+}
+
+#errores td {
+    font-size: 20px;
+    border-bottom: solid black 1px;
+    width: 40px;
+    word-wrap: break-word;
+    height: 10px;
+}
+
+#intentos {
+    position: absolute;
+    left: 70%;
+    table-layout: fixed;
+    top: 200px;
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    z-index: 100;
+    align-self: center;
+    text-align: center;
+    padding: 0px;
+}
+
+#intentos td {
+    border: none;
+    width: 20px;
+    word-wrap: break-word;
+    height: 10px;
+}
+
+
+/*Estilo de pantalla de agregar palabras */
+
+#active {
+    visibility: visible;
+    transition: all 0.001s ease 0s;
+}
+
+#botonesAgPal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+#guarPal {
+    color: white;
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+    background-color: #0A3871;
+    border-radius: 24px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+#guarPal:hover {
+    transform: translateY(-7px);
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+}
+
+#guarPal:active {
+    transform: translateY(-2px);
+}
+
+#cancelPal {
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    background-color: white;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+#cancelPal:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#cancelPal:active {
+    transform: traslateY(-1px);
+}
+
+input {
+    padding: 20px;
+    color: black;
+    height: 50px;
+    width: 500px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+input:hover {
+    box-shadow: 0px 15px 20px rgba(46, 217, 229, 0.4);
+    color: black;
+    transform: translateY(-7px);
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+svg {
+    margin: 0px;
+}
+
+#aviso {
+    display: flex;
+    height: 115px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0px;
+}
