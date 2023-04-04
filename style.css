@@ -1,0 +1,94 @@
+body {
+    background-color: aquamarine;
+}
+
+#ar-jug {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#jugador,
+#CPU {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    background-color: #ec3737ce;
+}
+
+#table-jug,
+#Tab-cpu {
+    padding: 5px;
+    width: 96%;
+    height: 96%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+#table-jug div,
+#Tab-cpu div {
+    padding: 10px;
+    background-color: white;
+}
+
+#jugador h4:first-of-type,
+#CPU h4:first-of-type {
+    margin: 5px;
+    color: white;
+}
+
+#numeros {
+    background-color: grey;
+    background: radial-gradient(rgb(240, 236, 236), rgb(139, 139, 139));
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    width: 75px;
+    height: 75px;
+    border: solid 2px grey;
+}
+
+#Num-fuera {
+    text-align: center;
+    padding: 5px;
+    width: 99%;
+    height: 98%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-color: aqua;
+}
+
+#Num-fuera div {
+    background-color: white;
+}
+
+#ar-numselec {
+    width: 700px;
+    height: 450px;
+}
+
+#container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
